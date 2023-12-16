@@ -145,3 +145,66 @@ nav a {
     }
 
     
+
+    /*Footer styles*/
+
+    footer {
+        background-color: black;
+        color: white;
+        padding: 20px;
+    }
+
+    /*Add space between the footer and the last object in the <main>*/
+
+    footer {
+        margin-top: 20px;
+    }
+
+    /*Arrange sections in a row*/
+    footer section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /*Logo styles*/
+
+    footer img {
+        width: 100px;
+        height: auto;
+    }
+
+    /*Copyright text styles*/
+
+    footer section:nth-child(1) div:nth-child(2) {
+        text-align: center;
+        margin: 10px;
+    }
+
+    /*Social media icons styles*/ 
+    footer section:nth-child(1) div:nth-child(3) img{
+        width: 30px;
+        height: auto;
+        margin: 0 px;
+    }
+
+    /*Separator line styles*/
+
+    .separator-line {
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.50);
+        margin: 15px auto;
+    }
+
+    /* Navigation links styles*/
+
+    footer section:nth-child(3) a {
+        display: flex;
+        color: rgba(255, 255, 255, 0.50);
+        text-decoration: none;
+        margin-bottom: 5px;
+    }
+
+    footer section:nth-child(3) a:hover {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+        display: inline-block; /* Set to inline block to match the width of the text*/
+    }

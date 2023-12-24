@@ -1,0 +1,87 @@
+section {
+    box-sizing: border-box;
+}
+
+.main-upper-section {
+    text-align: center;
+    position: relative;
+}
+
+.main-upper-section img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.bestseller-men {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.left-column,
+.right-column {
+    width: 50%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;   
+}
+
+.image-section img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 16px;
+}
+
+.product-description {
+    text-align: left;
+}
+
+.pricetag-and-item-count {
+    display: flex;
+    align-items: center;
+}
+
+.pricetag-and-item-count p {
+    margin-right: 80px;
+}
+
+.view-cart {
+    display: inline-block;
+    background-color: black;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    align-self:flex-start;
+}
+
+.view-cart a {
+    color: white;
+    text-decoration: none;
+}
+
+.view-cart:hover {
+    background-color: #404040;
+}
+
+@media only screen and (max-width: 600px) {
+    .pricetag-and-item-count{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

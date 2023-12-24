@@ -208,3 +208,13 @@ nav a {
         border-bottom: 1px solid rgba(255, 255, 255, 0.50);
         display: inline-block; /* Set to inline block to match the width of the text*/
     }
+
+    @media only screen and (max-width: 600px) {
+        footer section{
+            flex-direction: column;
+        }
+
+        footer section > div {
+            text-align: center;
+        }
+    }

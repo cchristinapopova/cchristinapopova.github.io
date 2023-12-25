@@ -29,6 +29,11 @@ section {
     padding: 10px;
 }
 
+.right-column {
+    flex-grow: 1; /* Allow the right column to grow to fill available space */
+    position: relative; /* Create a positioning context for the absolute positioning of the image */
+}
+
 .text-content {
     display: flex;
     flex-direction: column;
@@ -42,10 +47,11 @@ section {
 
 .image-section img {
     width: 100%; 
-    height: auto;
+    height: 100%;
     object-fit: cover;
     flex-shrink: 0;
     border-radius: 16px;
+    position: absolute; /* Position the image relative to its containing block */
 }
 
 .product-description {

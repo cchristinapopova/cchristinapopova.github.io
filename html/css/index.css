@@ -10,25 +10,186 @@
     background-size: cover;  
 }
 
-h1,
-h2 {
+h1.title,
+h2.title {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.learn-more {
-    display: inline-block;
+.learn-more{
+    display: inline-flex;
     background-color: black;
     padding: 16px 20px;
     border-radius: 8px;
     margin: 20px;   
-    align-self: center;
 }
 
 .learn-more a {
     color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 .learn-more :hover {
     background-color: #404040;
+}
+
+
+
+
+.container-for-mens-section{
+    display: flex;
+    background-color: aqua;
+    margin-bottom: 10px;
+}
+
+.left-column {
+    display: flex;
+    flex: 1;
+    margin-right: 0.2rem;
+}
+
+.right-column {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end; 
+}
+
+.right-column img {
+    width: 100%;
+    max-height: 334px;
+    object-fit: cover;
+    border-radius: 16px;
+    align-items: stretch;
+}
+
+.left-column h3 {
+    color: #828282;
+}
+
+
+
+.shop-mens-collection {
+    display: inline-flex;
+    background-color: black;
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+}
+
+.shop-mens-collection a,
+.learn-more-medium a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.learn-more-medium {
+    font-size: 0.8rem; 
+    display: inline-flex; 
+    align-items: center;
+    background-color: black;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 20px;  
+}
+
+.learn-more-medium a{
+    text-decoration: none;
+}
+
+
+.learn-more-small {
+    font-size: 0.5rem; 
+    align-self: flex-end;
+}
+
+.learn-more-small a {
+    color: #000;   
+}
+
+
+.container-for-womens-section{
+    display: flex;
+    background-color:aquamarine;
+    margin-bottom: 10px;
+}
+
+.left-column-women {
+    display: flex;
+    flex: 1;
+    margin-right: 0.2rem;
+}
+
+.left-column-women img {
+    width: 100%;
+    max-height: 334px;
+    object-fit: cover;
+    border-radius: 16px;
+    align-items: stretch;
+}
+
+.right-column-women {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    margin-left: 0.2rem;
+}
+
+.right-column-women h3 {
+    color: #828282;
+}
+
+
+
+
+
+
+
+.features-main-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aqua;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0.6rem;
+}
+
+.feature-description-text {
+    max-width: 8rem;
+}
+
+
+
+.learn-more-medium-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.learn-more-medium {
+    text-align: center;
+}
+
+
+
+
+.cta-block {
+    background-color: rgb(255, 171, 91, 1);
+}
+
+.cta-block h2, 
+.cta-block h3, 
+.cta-block p {
+    color: #fff;
+}
+
+.button-in-cta-block {
+    display: inline-block;
+    background-color: black;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 5px;
 }

@@ -1,3 +1,6 @@
+
+/*TITLE AREA*/
+
 .title-area {
     display: flex;
     flex-direction: column;
@@ -33,18 +36,17 @@ h2.title {
 }
 
 
-
+/*MEN*/
 
 .container-for-mens-section{
     display: flex;
-    background-color: aqua;
     margin-bottom: 10px;
+    gap: 1rem;
 }
 
 .left-column {
     display: flex;
     flex: 1;
-    margin-right: 0.2rem;
 }
 
 .right-column {
@@ -66,6 +68,7 @@ h2.title {
 }
 
 
+/*BUTTONS*/
 
 .shop-mens-collection {
     display: inline-flex;
@@ -97,8 +100,7 @@ h2.title {
 
 
 .learn-more-small {
-    font-size: 0.5rem; 
-    align-self: flex-end;
+    font-size: 0.7rem; 
 }
 
 .learn-more-small a {
@@ -106,16 +108,18 @@ h2.title {
 }
 
 
+
+
+/*WOMEN*/
+
 .container-for-womens-section{
     display: flex;
-    background-color:aquamarine;
-    margin-bottom: 10px;
+    gap: 1rem;
 }
 
 .left-column-women {
     display: flex;
     flex: 1;
-    margin-right: 0.2rem;
 }
 
 .left-column-women img {
@@ -130,7 +134,6 @@ h2.title {
     display: flex;
     flex-direction: column;
     flex: 1; 
-    margin-left: 0.2rem;
 }
 
 .right-column-women h3 {
@@ -140,21 +143,21 @@ h2.title {
 
 
 
-
+/*FEATURES*/
 
 
 .features-main-container {
     display: flex;
     flex-wrap: wrap;
-    background-color: aqua;
     margin-bottom: 10px;
     justify-content: center;
+    gap: 1.5rem 2rem;
 }
 
 .feature-item {
     display: flex;
     flex-direction: column;
-    margin: 0.6rem;
+    
 }
 
 .feature-description-text {
@@ -162,7 +165,7 @@ h2.title {
 }
 
 
-
+/*BUTTON*/
 .learn-more-medium-section {
     display: flex;
     align-items: center;
@@ -176,8 +179,16 @@ h2.title {
 
 
 
+
+/*THE ORANGE CTA BLOCK*/
+
 .cta-block {
     background-color: rgb(255, 171, 91, 1);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .cta-block h2, 
@@ -186,10 +197,35 @@ h2.title {
     color: #fff;
 }
 
+.cta-block h2 {
+    font-size: 1.3rem;
+}
+
+.cta-h3 {
+    max-width: 16rem;
+    margin-top: 1rem;
+}
+
+.cta-buttons-section {
+    display: flex;
+    align-content: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.cta-buttons-and-stars-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-stars {
+    text-align: center;
+    
+}
+
 .button-in-cta-block {
     display: inline-block;
     background-color: black;
     padding: 16px 20px;
     border-radius: 8px;
-    margin: 5px;
 }

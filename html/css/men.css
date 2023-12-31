@@ -2,6 +2,12 @@ section {
     box-sizing: border-box;
 }
 
+.container-for-main{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .main-upper-section {
     text-align: center;
     position: relative;
@@ -14,19 +20,18 @@ section {
     right: 0;
 }
 
+
+
 .bestseller-men {
     display: flex;
-    flex-direction: row;
-    
+    gap: 1rem;
 }
 
 .left-column,
 .right-column {
-    width: 50%;
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 10px;
 }
 
 .right-column {
@@ -56,23 +61,26 @@ section {
 
 .product-description {
     text-align: left;
+    color: #828282;
+}
+
+.price-and-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .pricetag-and-item-count {
     display: flex;
     align-items: center;
-}
-
-.pricetag-and-item-count p {
-    margin-right: 80px;
+    gap: 1rem;
 }
 
 .view-cart {
     display: inline-block;
     background-color: black;
-    padding: 16px 20px;
+    padding: 1rem 1.2rem;
     border-radius: 8px;
-    margin-top: 20px;
     align-self:flex-start;
 }
 
@@ -89,5 +97,37 @@ section {
     .pricetag-and-item-count{
         flex-direction: column;
         align-items: flex-start;
+    }
+}
+
+
+.category-buttons-block {
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.category-button {
+    display: inline-block;
+    background-color: #e8e8e8;
+    padding: 0.1rem 0.5rem;
+    border-radius: 40px;
+}
+
+.view-cart-small {
+    font-size: 0.7rem; 
+}
+
+.view-cart-small a {
+    color: #828282;  
+}
+
+@media only screen and (max-width: 600px) {
+    .category-buttons-block {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        align-content: center;        
     }
 }

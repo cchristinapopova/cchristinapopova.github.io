@@ -6,13 +6,11 @@ h1, h2 {
 form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center; 
     box-sizing: border-box;
-    min-height: 100%;
-    max-width: 50%;
+    min-height: 100%; 
     width: 100%;
-    max-width: 600px;
+    max-width: 100%;
     object-fit: cover;
     align-self: stretch;
     padding: 20px;
@@ -40,7 +38,6 @@ h2 {
     display: flex;
     align-items: stretch;
     margin: 0 auto;
-    max-width: 1200px;
 }
 
 .form-image { 
@@ -58,7 +55,7 @@ h2 {
 .form__submit,
 .form-image {
     width: 100%;
-    box-sizing: border-box;          
+    box-sizing: border-box;         
 }
 
 .form__input, .form__textarea {

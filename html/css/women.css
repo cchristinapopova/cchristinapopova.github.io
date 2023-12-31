@@ -1,0 +1,133 @@
+
+section {
+    box-sizing: border-box;
+}
+
+.container-for-main{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main-upper-section {
+    text-align: center;
+    position: relative;
+}
+
+.main-upper-section img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.bestseller-women {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-column {
+    flex-grow: 1; /* Allow the right column to grow to fill available space */
+    position: relative; /* Create a positioning context for the absolute positioning of the image */
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;   
+}
+
+.image-section img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 16px;
+    position: absolute; /* Position the image relative to its containing block */
+}
+
+.product-description {
+    text-align: left;
+    color: #828282;
+}
+
+.pricetag-and-item-count {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.price-and-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.view-cart {
+    display: inline-block;
+    background-color: black;
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    align-self:flex-start;
+}
+
+.view-cart a {
+    color: white;
+    text-decoration: none;
+}
+
+.view-cart:hover {
+    background-color: #404040;
+}
+
+@media only screen and (max-width: 600px) {
+    .pricetag-and-item-count{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.category-buttons-block {
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.category-button {
+    display: inline-block;
+    background-color: #e8e8e8;
+    padding: 0.1rem 0.5rem;
+    border-radius: 40px;
+}
+
+.view-cart-small {
+    font-size: 0.7rem; 
+}
+
+.view-cart-small a {
+    color: #828282;  
+}
+
+@media only screen and (max-width: 600px) {
+    .category-buttons-block {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        align-content: center;        
+    }
+}
+

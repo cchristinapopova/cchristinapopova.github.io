@@ -177,6 +177,23 @@ nav a.current-page {
         flex: 1;
       }
 
+      .basic-button {
+        display: inline-flex;
+        background-color: black;
+        padding: 0.8rem 1rem;
+        border-radius: 8px;  
+        width: fit-content;
+    }
+    
+    .basic-button a {
+        color: #fff;
+        text-decoration: none; 
+    }
+    
+    .basic-button :hover {
+        background-color: #404040;
+    }
+
     /*Footer styles*/
 
     footer {

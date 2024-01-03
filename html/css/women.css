@@ -70,12 +70,6 @@ section {
     gap: 1rem;
 }
 
-.price-and-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
 .view-cart {
     display: inline-block;
     background-color: black;

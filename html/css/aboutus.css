@@ -1,0 +1,12 @@
+
+
+.upper-block h1{
+    font-size: 1rem;
+    color: #828282;
+}
+
+.upper-block {
+    display: flex;
+    justify-content: space-between;
+}
+

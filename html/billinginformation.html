@@ -42,7 +42,80 @@
     </nav>
     </header>
     <main>
+
+        <div class="upper-block">
+            <div>
+                <h1><- Back</h1>
+            </div>
+            <div>
+                <h1>0 Item(s)</h1>
+            </div>
+        </div>
+
         <h1>Billing Information</h1>
+        <section class="container-for-main">
+
+            <section class="left-column">
+                <div>
+                    <img src="../images/billing-information-big-img.jpg" alt="An array of identical black credit cards">
+                </div>
+            </section>
+
+            <section class="right-column">   
+                    <h2 class="left-aligned-h2">Choose Your Card and Enter Your Payment Details</h2> 
+                    
+                    <div>
+                        <img src="../images/card1mastercard.png" alt="mastercard icon">
+                        <img src="../images/card2maestro.png" alt="maestro card icon">
+                        <img src="../images/card3american express.png" alt="american express card icon">
+                        <img src="../images/card4dinersclub.png" alt="diners club card icon">
+                        <img src="../images/card5visa.png" alt="visa card icon">
+                    </div>
+                    
+                    <form>
+                        <div>
+                            <label for="creditcard">Card Number</label>
+                            
+                            <input type="text" id="creditcard" name="creditcard" placeholder="1234 9284 3872 8357" maxlength="16"/>
+                        </div>
+
+                        <div>
+                            <label for="expirationdate">Valid Upto</label>
+                        
+                            <input type="text" id="expirationdate" name="expirationdate" placeholder="MM/YY" maxlength="5"/>
+                        </div>
+
+                        <div>
+                            <label for="cvv">CVV</label>
+                            
+                            <input type="password" id="cvv" name="CVV" placeholder="123" maxlength="3"/>
+                        </div>
+
+                        <div>
+                            <label for="cardholdername">Cardholder Name</label>
+                            
+                            <input type="text" id="cardholdername" name="cardholdername" />
+                            
+                        </div>
+                    </form>
+
+                <div class="total-amount-block">
+                    <p>Total amount</p>
+                    <p>$ <span>0</span></p>
+                </div>
+            
+                <div class="checkbox-container">
+                    <input type="checkbox" id="remembercard" name="add-card"/>
+                    <label for="remembercard">Add card for future payments</label>
+                </div>
+
+                <div class="basic-button">
+                    <a href="orderoverview.html">Proceed Payment</a>
+                </div>
+            
+            </section>
+        </section>
+
     </main>    
     <footer>
         <section>

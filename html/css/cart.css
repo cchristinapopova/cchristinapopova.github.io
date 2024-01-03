@@ -1,0 +1,44 @@
+
+.upper-block h1 {
+    font-size: 1rem;
+    color: #828282;
+}
+
+.upper-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-for-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.no-items-in-cart-section {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    border-radius: 16px;
+}
+
+.please-proceed-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.thank-you-icons-block {
+    display: flex;
+    gap: 1rem;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 600px) {
+    .please-proceed-section {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }    
+}

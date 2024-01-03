@@ -149,7 +149,8 @@ h3 {
 .button-in-cta-block {
     display: inline-block;
     background-color: black;
-    padding: 16px 20px;
+    padding: 0.8rem 1rem;
     border-radius: 8px;
+    width: fit-content;
 }
 

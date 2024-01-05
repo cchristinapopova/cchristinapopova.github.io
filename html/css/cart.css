@@ -12,7 +12,7 @@
 .container-for-main {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .no-items-in-cart-section {
@@ -41,4 +41,14 @@
         flex-direction: column;
         align-items: center;
     }    
+}
+
+@media only screen and (max-width: 315px) {
+    .thank-you-icons-block {
+        display: flex;
+        gap: 1rem;         
+        white-space: normal;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

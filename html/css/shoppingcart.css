@@ -13,7 +13,7 @@
 .container-for-main {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .no-items-in-cart-section {
@@ -27,7 +27,6 @@
 .please-proceed-section {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
 }
 
 .thank-you-icons-block {
@@ -36,10 +35,30 @@
     white-space: nowrap;
 }
 
+.last-img-container img {
+    border-radius: 16px;
+    width: 100%;
+    height: auto; 
+}
+
+footer {
+    margin-top: 0rem;
+}
+
 @media only screen and (max-width: 600px) {
     .please-proceed-section {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
-    }    
+    }   
+}
+
+@media only screen and (max-width: 315px) {
+    .thank-you-icons-block {
+        display: flex;
+        gap: 1rem;         
+        white-space: normal;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

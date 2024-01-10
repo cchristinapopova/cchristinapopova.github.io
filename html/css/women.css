@@ -108,6 +108,11 @@ section {
     border-radius: 40px;
 }
 
+.category-button.active {
+    background-color: #000;
+    color: #fff;
+}
+
 .view-cart-small {
     font-size: 0.7rem; 
 }

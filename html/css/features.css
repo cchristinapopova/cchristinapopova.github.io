@@ -2,6 +2,7 @@
 .small-grey-h1 {
     color: #828282;
     font-size: 0.7rem;
+    text-transform: uppercase;
 }
 
 .container-for-all-feature-containers {

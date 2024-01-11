@@ -137,12 +137,13 @@ nav a.current-page {
         text-decoration: none;
     }
 
-
-
     body {
         padding: 20px;
         height: 100vh;
         font-family: "Roboto Condensed", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
     }
 
     h1, h2 {
@@ -166,12 +167,6 @@ nav a.current-page {
     h3 {
         font-size: 0.8rem;
     }
-
-    body {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-      }
       
       main {
         flex: 1;

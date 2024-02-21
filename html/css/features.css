@@ -113,6 +113,8 @@ h3 {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin: auto;
+    padding: 1rem;
 }
 
 .cta-block h2, 
@@ -133,8 +135,7 @@ h3 {
 .cta-buttons-section {
     display: flex;
     align-content: center;
-    gap: 0.8rem;
-    margin-top: 1rem;
+    gap: 0.8rem;  
 }
 
 .cta-buttons-and-stars-section {
@@ -144,14 +145,61 @@ h3 {
 
 .cta-stars {
     text-align: center;
-    
 }
 
 .button-in-cta-block {
     display: inline-block;
     background-color: black;
-    padding: 0.8rem 1rem;
+    padding: 16px 20px;
     border-radius: 8px;
-    width: fit-content;
+}
+
+@media screen and (min-width: 600px) {
+    .cta-block {
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    
+    .cta-buttons-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .button-in-cta-block {
+        margin: 0.3rem;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cta-stars {
+        margin-top: 1rem;
+    }
+
+    .cta-block img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .container-for-feature,     
+    .image-section {
+        display: flex;
+        flex-direction: column; 
+        gap: 12rem;
+    }
+
+    .left-column-feature {
+        order: 1;
+    }
+
+    .right-column-feature img {
+        width: 100%;
+        height: 10rem;
+    }
 }
 

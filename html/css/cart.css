@@ -35,6 +35,10 @@
     white-space: nowrap;
 }
 
+.thank-you-img {
+    border-radius: 16px;
+}
+
 @media only screen and (max-width: 600px) {
     .please-proceed-section {
         flex-wrap: wrap;
@@ -44,11 +48,29 @@
 }
 
 @media only screen and (max-width: 315px) {
+    .container-for-main {
+        gap: 0.5rem;
+    }
+
+    .no-items-in-cart-section {
+        padding: 1.5rem;
+    }
+
+    .container-for-main h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+    }
+
     .thank-you-icons-block {
         display: flex;
-        gap: 1rem;         
+        gap: 0.5rem;
         white-space: normal;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .thank-you-icons-block > * {
+        flex-basis: calc(20% - 0.5rem);
+        text-align: center;
     }
 }

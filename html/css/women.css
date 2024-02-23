@@ -76,8 +76,12 @@ section {
     width: 100%;
 }
 
+.price-and-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
 .view-cart {
-    display: inline-block;
     background-color: black;
     padding: 1rem 1.2rem;
     border-radius: 8px;
@@ -102,7 +106,6 @@ section {
 }
 
 .category-button {
-    display: inline-block;
     background-color: #e8e8e8;
     padding: 0.1rem 0.5rem;
     border-radius: 40px;
@@ -119,15 +122,6 @@ section {
 
 .view-cart-small a {
     color: #828282;  
-}
-
-@media only screen and (max-width: 600px) {
-    .category-buttons-block {
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-        align-content: center;        
-    }
 }
 
 @media only screen and (max-width: 400px) { 
@@ -203,23 +197,50 @@ section {
     }
 
     .category-buttons-block {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        display: flex;
+        }
+    
+    .category-button {
+        width: 100%;
     }
 
-    .category-button {
-        display: flex; 
-        align-items: center;
-        width: 100%; 
-        margin: 0rem; /* Reset margin */
-        padding: 0; /* Reset padding */     
+    .h2-in-the-category-button {
+        font-size: 0.8rem;
     }
 
     .h2-in-the-category-button {
         font-size: 0.8rem;
     }
 }
+
+@media screen and (max-width: 550px) {
+    .main-upper-section img {
+        max-width: 30%;
+    }
+
+    .main-upper-section h1 {
+        width: 90%;
+    }
+    
+    .bestseller-women {
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+    }
+
+    .left-column {
+        order: 1;
+    }
+
+    .right-column img {
+        width: 100%;
+        height: 10rem;
+    }
+
+    .price-and-buttons {
+        align-self: center;
+    }
+} 
 
 @media only screen and (max-width: 500px) {
     .product-boxes {
@@ -228,6 +249,13 @@ section {
 
     .category-buttons-block {
         gap: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .pricetag-and-item-count {
+        display: flex;
+        flex-direction: column;
     }
 }
 

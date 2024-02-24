@@ -43,28 +43,33 @@ nav a.current-page {
         position: relative;
         padding: 10px;
         font-size: 2rem;
+        z-index: 1000;
     }
 
     nav,
     #menu-checkbox {
         display: none;
-        margin-right: 5%;
     }
 
     nav {
         position: absolute;
         background: white;
-        top: 70px;
-        left: 10px;
+        top: 3.5rem;
+        padding: 0;
     }
 
-    nav a, .dropdown-content a {
+    nav a {
         display: block;
         color: rgba(0, 0, 0, 0.5);
-        padding: 10px 20px;
+        padding: 0.5rem;
         font-size: 1rem;
+        margin-right: 0;
     }
-    
+
+    nav .dropdown a {
+        padding: 0.5rem;
+    }
+   
     #cart-tag {
         display: none;
     }
@@ -77,7 +82,6 @@ nav a.current-page {
         display: block; /* Display the dropdown content as a block */
         position: static;
         box-shadow: none;
-        padding: 0;
         display: flex;
         flex-direction: column;
     }
@@ -89,14 +93,15 @@ nav a.current-page {
 }
 
 
-@media (min-width: 601px){
-    nav {display: block;
-        position: static;
+@media (min-width: 601px) {
+    nav {
+        display: block;
     }
+
     .hamburger-icon, #menu-checkbox {
         display: none;
     }
-    }
+}
 
     nav a:hover {
         color: black;
@@ -113,6 +118,7 @@ nav a.current-page {
         background-color: white;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
+        transition: display 0.3s ease;
     }
 
     .dropdown:hover .dropdown-content {
@@ -128,9 +134,6 @@ nav a.current-page {
 
     .dropdown-content a {
         border-top: 1px solid transparent #ccc;
-    }
-
-    .dropdown-content a {
         display: block;
         padding: 10px 20px;
         color: rgba(0, 0, 0, 0.5);

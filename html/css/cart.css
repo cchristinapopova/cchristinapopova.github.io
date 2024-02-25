@@ -26,7 +26,7 @@
 .please-proceed-section {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    gap: 0.5rem
 }
 
 .thank-you-icons-block {
@@ -36,6 +36,8 @@
 }
 
 .thank-you-img {
+    width: 100%;
+    height: auto;
     border-radius: 16px
 }
 

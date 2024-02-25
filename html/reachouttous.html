@@ -51,39 +51,48 @@
 
 
             <h1>Contact us</h1>
-            <div class="container"> 
-                <img src="/images/reachoutimage.jpg" alt="Reach out image" class="form-image">
-                <form action="thankyou.html" method="get">
-                    <h2>Get in Touch</h2>
-                    <fieldset>
-                        <legend>Name</legend>
-                        <input type="text" name="name" id="name" class="form__input">
-                    </fieldset>
-                    <fieldset>
-                        <legend>E-mail</legend>
-                        <input type="email" name="email" id="email" class="form__input" required>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Your Message</legend>
-                        <textarea name="Your Message" id="yourmessage" class="form__textarea" required></textarea>
-                    </fieldset>
-                    <input type="submit" value="Submit" class="form__submit">
-                </form>
-            </div>
+            <section class="container">
+                <div class="left-column-container">
+                    <img src="/images/reachoutimage.jpg" alt="Reach out image" class="form-image">
+                </div>
+                <div class="right-column-container">
+                    <div class="container-for-logo">
+                        <img src="../images/headerlogo.png" alt="Header Logo" class="headerlogo">
+                    </div>
+                        <form action="thankyou.html" method="get">
+                        <h2>Get in Touch</h2>
+                        <fieldset>
+                            <legend>Name</legend>
+                            <input type="text" name="name" id="name" class="form__input">
+                        </fieldset>
+                        <fieldset>
+                            <legend>E-mail</legend>
+                            <input type="email" name="email" id="email" class="form__input" required>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Your Message</legend>
+                            <textarea name="Your Message" id="yourmessage" class="form__textarea" required></textarea>
+                        </fieldset>
+                        <input type="submit" value="Submit" class="form__submit">
+                    </form>
+                </div>    
+            </section>
         </main>
         <footer>
-            <section>
+            <section class="upper-footer-section">
                 <div>
                     <img src="/images/footerlogo.jpg">
                 </div>
                 <div>
                     &copy;2017-2023 Rainy Days Inc.
                 </div>
-                <div>
+                <div class="social-media-logos">
+                    <img src="/images/tiktoklogo.png">
                     <img src="/images/youtubelogo.png">   
                     <img src="/images/twitterlogo.png"> 
                     <img src="/images/instagramlogo.png">
-                    <img src="/images/facebooklogo.png">                
+                    <img src="/images/xlogo.png"> 
+                    <img src="/images/facebooklogo.png">               
                 </div>
             </section>
             <div class="separator-line"></div>

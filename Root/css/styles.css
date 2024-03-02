@@ -31,6 +31,8 @@ nav a.current-page {
     color: #333;
 }
 
+/*Buttons*/
+
 .basic-button {
     background-color: black;
     padding: 0.8rem 1.25rem;
@@ -69,7 +71,7 @@ nav a.current-page {
 	color: #000;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
 
     .logo-container {
         margin-right: auto;
@@ -129,7 +131,7 @@ nav a.current-page {
 }
 
 
-@media (min-width: 601px) {
+@media (min-width: 751px) {
     nav {
         display: block;
     }

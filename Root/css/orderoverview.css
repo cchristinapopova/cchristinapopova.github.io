@@ -1,0 +1,136 @@
+
+.upper-block h1,
+.upper-block .back-arrow {
+    font-size: 1rem;
+    color: #828282;
+    text-decoration: none;
+}
+
+.upper-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-success-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;   
+}
+
+.left-and-right-columns{
+    display: flex;
+    gap: 1rem;
+}
+
+.left-column,
+.right-column {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-column-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.grey-background {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grey-text {
+    color: #707070;
+}
+
+.below-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .combined-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .grey-background {
+        flex-direction: column;
+        padding: 0.5rem;
+        gap: 0.1rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .grey-background {
+        height: 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .combined-grid {
+        grid-template-columns: 1fr;
+    }
+    .row {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .basic-button {
+        min-width: 151.41px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 255px) and (max-width: 375px) {
+    .below-grid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;            
+    }
+    
+    .basic-button { 
+        box-sizing: border-box;
+        padding: 1rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 255px) {
+    .below-grid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;             
+    }
+    
+    .basic-button { 
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1rem 0;
+    }
+}

@@ -1,0 +1,218 @@
+
+/*TITLE AREA*/
+
+.title-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/background-img.jpg);
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    padding: 0.5rem;
+    border-radius: 16px;
+}
+
+h1.title,
+h2.title {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/*MEN*/
+
+.container-for-mens-section{
+    display: flex;
+    margin-bottom: 10px;
+    gap: 1rem;
+}
+
+.left-column {
+    display: flex;
+    flex: 1;
+}
+
+.right-column {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end; 
+}
+
+.right-column img {
+    width: 100%;
+    max-height: 334px;
+    object-fit: cover;
+    border-radius: 16px;
+    align-items: stretch;
+}
+
+.left-column h3 {
+    color: #828282;
+}
+
+
+/*BUTTONS*/
+
+.learn-more-small a {
+    font-size: 0.7rem; 
+    color:#828282;
+}
+
+.learn-more-small a:hover {
+    color: #000;   
+}
+
+/*WOMEN*/
+
+.container-for-womens-section{
+    display: flex;
+    gap: 1rem;
+}
+
+.left-column-women {
+    display: flex;
+    flex: 1;
+}
+
+.left-column-women img {
+    width: 100%;
+    max-height: 334px;
+    object-fit: cover;
+    border-radius: 16px;
+    align-items: stretch;
+}
+
+.right-column-women {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+}
+
+.right-column-women h3 {
+    color: #828282;
+}
+
+
+
+/*FEATURES*/
+
+
+.features-main-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    justify-content: center;
+    gap: 1.5rem 2rem;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.feature-description-text {
+    max-width: 8rem;
+}
+
+
+/*BUTTON SECTION*/
+.learn-more-medium-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+/*THE ORANGE CTA BLOCK*/
+
+.cta-block {
+    background-color: rgb(255, 171, 91, 1);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 1rem;
+}
+
+.cta-block h2, 
+.cta-block h3, 
+.cta-block p {
+    color: #fff;
+}
+
+.cta-block h2 {
+    font-size: 1.3rem;
+}
+
+.cta-h3 {
+    max-width: 16rem;
+    margin-top: 1rem;
+}
+
+.cta-buttons-section {
+    display: flex;
+    align-content: center;
+    gap: 0.8rem;  
+}
+
+.cta-buttons-section {
+    display: flex;
+    align-items: center;
+}
+
+.cta-stars {
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    .cta-block {
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    
+    .cta-buttons-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .button-in-cta-block,
+    .button-in-cta-block a {
+        margin: 0.3rem;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cta-stars {
+        margin-top: 1rem;
+    }
+
+    .cta-block img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 285px) {
+    .container-for-mens-section, .container-for-womens-section {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .shop-mens-collection {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .left-column-women {
+        order: 1;
+    }
+}
+

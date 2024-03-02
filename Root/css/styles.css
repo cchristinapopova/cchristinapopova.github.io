@@ -14,13 +14,13 @@ header{
     font-family: "Roboto Condensed", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav{
+nav {
     align-items: center;
-    padding: 0 10px;     
+    padding: 0 0.4rem;     
 }
 
 nav a {
-    margin-right: 20px;
+    margin-right: 1.25rem;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.5);
     white-space: nowrap;
@@ -30,6 +30,42 @@ nav a {
 nav a.current-page {
     color: #333;
 }
+
+body {
+    padding: 1.25rem;
+    height: 100vh;
+    font-family: "Roboto Condensed", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+  }
+
+h1, h2 {
+    text-align: center; 
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+h3 {
+    font-size: 0.8rem;
+}
+
+.left-aligned-h2,
+.product-description-header {
+    text-align: left;
+}
+
 
 /*Buttons*/
 
@@ -71,6 +107,8 @@ nav a.current-page {
 	color: #000;
 }
 
+/*Hamburger menu hidden*/
+
 @media screen and (max-width: 750px) {
 
     .logo-container {
@@ -103,10 +141,6 @@ nav a.current-page {
         font-size: 1rem;
         margin-right: 0;
     }
-
-    nav .dropdown a {
-        padding: 0.5rem;
-    }
    
     #cart-tag {
         display: none;
@@ -130,6 +164,7 @@ nav a.current-page {
 
 }
 
+/*Hemburger menu visible*/
 
 @media (min-width: 751px) {
     nav {
@@ -171,46 +206,15 @@ nav a.current-page {
     .dropdown-content a {
         border-top: 1px solid transparent #ccc;
         display: block;
-        padding: 10px 20px;
+        padding: 0.3rem 0.5rem 0.7rem 0.5rem;
         color: rgba(0, 0, 0, 0.5);
         text-decoration: none;
     }
+
+    .dropdown-content a:first-child {
+        padding: 0.7rem 0.5rem 0.3rem 0.5rem;        
 }
-
-    body {
-        padding: 20px;
-        height: 100vh;
-        font-family: "Roboto Condensed", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
-
-    h1, h2 {
-        text-align: center; 
-        width: 100%;
-    }
-    
-    h1 {
-        font-size: 2rem;
-    }
-    
-    h2 {
-        font-size: 1rem;
-    }
-
-    .left-aligned-h2,
-    .product-description-header {
-        text-align: left;
-    }
-
-    h3 {
-        font-size: 0.8rem;
-    }
-      
-    main {
-        flex: 1;
-      }
+}
 
     /*Footer styles*/
 
@@ -313,7 +317,7 @@ nav a.current-page {
     }
 
     @media only screen and (max-width: 600px) {
-        footer section{
+        footer section {
             flex-direction: column;
         }
 

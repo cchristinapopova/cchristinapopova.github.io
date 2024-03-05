@@ -27,14 +27,14 @@ section {
 
 .left-column,
 .right-column {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
 }
 
 .right-column {
-	flex-grow: 1; /* Allow the right column to grow to fill available space */
-	position: relative; /* Create a positioning context for the absolute positioning of the image */
+    flex: 2;
+    position: relative; /* Create a positioning context for the absolute positioning of the image */
 }
 
 .text-content {
@@ -55,6 +55,7 @@ section {
 	flex-shrink: 0;
 	border-radius: 16px;
 	position: absolute; /* Position the image relative to its containing block */
+	object-position: left;
 }
 
 .product-description {
@@ -165,6 +166,13 @@ section {
 
 	.product-box h2 {
 		margin: 0.5rem;
+	}
+
+	.bestseller-men {
+		margin-bottom: 6rem;
+	}
+	.image-section img {
+		min-height: 20rem;
 	}
 }
 

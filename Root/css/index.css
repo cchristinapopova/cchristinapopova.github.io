@@ -8,9 +8,9 @@
     justify-content: center;
     background-image: url(../images/background-img.jpg);
     background-position-x: center;
-    background-position-y: bottom;
-    background-repeat: no-repeat;
+    background-position-y: top;
     background-size: cover;  
+    min-height: 25rem;
     padding: 0.5rem;
     border-radius: 16px;
 }

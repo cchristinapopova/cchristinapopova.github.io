@@ -47,7 +47,18 @@
 .thank-you-img {
     width: 100%;
     height: auto;
-    border-radius: 16px
+    border-radius: 16px;
+}
+
+@media only screen and (min-width: 600px) {
+    .img-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-container img {
+        align-self: center;
+    }
 }
 
 @media only screen and (max-width: 600px) {

@@ -6,11 +6,6 @@
     text-decoration: none;
 }
 
-.upper-block {
-    display: flex;
-    justify-content: space-between;
-}
-
 h1, 
 h2{
     text-align: center; 

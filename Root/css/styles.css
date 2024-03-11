@@ -1,6 +1,3 @@
-
-
-
 .headerlogo{
     width: 100px;
     height: auto;
@@ -29,6 +26,11 @@ nav a {
 
 nav a.current-page {
     color: #333;
+}
+
+main {
+    max-width: 1000px;
+    align-self: center;
 }
 
 body {
@@ -213,8 +215,79 @@ h3 {
 
     .dropdown-content a:first-child {
         padding: 0.7rem 0.5rem 0.3rem 0.5rem;        
-}
-}
+        }
+    }
+
+    /*upper-block*/
+    .upper-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /*CTA-block*/
+    .cta-block {
+        background-color: rgb(255, 171, 91, 1);
+        border-radius: 16px;
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+    
+    .cta-block h2, 
+    .cta-block h3, 
+    .cta-block p {
+        color: #fff;
+    }
+    
+    .cta-block h2 {
+        font-size: 1.3rem;
+    }
+    
+    .cta-h3 {
+        max-width: 16rem;   
+    }
+    
+    .cta-buttons-section {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem; 
+    }
+    
+    .cta-stars {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 600px) {
+        .cta-block {
+            gap: 1rem;
+        } 
+    }
+
+    @media screen and (max-width: 350px) {
+    
+        .cta-buttons-section {
+            flex-direction: column;
+            gap: 0;
+        }
+    
+        .button-in-cta-block {
+            margin: 0.3rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    
+        .cta-stars {
+            margin-top: 1rem;
+        }
+    
+        .cta-block img {
+            width: 100%;
+        }
+    }
 
     /*Footer styles*/
 

@@ -6,11 +6,6 @@
     text-decoration: none;
 }
 
-.upper-block {
-    display: flex;
-    justify-content: space-between;
-}
-
 .payment-success-section {
     display: flex;
     flex-direction: column;
@@ -48,7 +43,9 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-}
+    height: 90%;
+    justify-content: center;
+    }
 
 .right-column {
     display: flex;
@@ -67,11 +64,16 @@
     margin-top: 1.5rem;
 }
 
+.basic-button { 
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 100%;
+}
+
 @media screen and (max-width: 600px) {
     .combined-grid {
         grid-template-columns: 1fr;
     }
-
 }
 
 @media screen and (max-width: 400px) {
@@ -82,28 +84,18 @@
     }
 }
 
-@media screen and (max-width: 376px) {
-    .grey-background {
-        height: 100%;
-        justify-content: center;
-    }
-}
-
-@media screen and (min-width: 600px) {
-    .combined-grid {
-        grid-template-columns: 1fr;
-    }
-    .row {
-        display: flex;
-        flex-direction: row; 
-        justify-content: space-between;
-    }
-}
-
 @media screen and (min-width: 375px) {
-    .basic-button {
-        min-width: 151.41px;
-        box-sizing: border-box;
+    .left-and-right-columns {
+        display: flex;
+        flex-direction: column;
+    }
+    .right-column {
+        order: 1;
+        align-self: center;
+    }
+
+    .left-column {
+        width: 100%;
     }
 }
 
@@ -112,12 +104,6 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;            
-    }
-    
-    .basic-button { 
-        box-sizing: border-box;
-        padding: 1rem;
-        width: 100%;
     }
 }
 

@@ -1,6 +1,5 @@
-.headerlogo{
-    width: 100px;
-    height: auto;
+.headerlogo {
+    width: 100px;   
 }
 
 header{
@@ -90,10 +89,6 @@ h3 {
 
 .basic-button:hover {
     background-color: #404040;
-}
-
-.upper-block a:hover {
-    color:#000;
 }
 
 .view-cart-small {
@@ -223,6 +218,17 @@ h3 {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .upper-block h1,
+    .upper-block .back-arrow {
+        font-size: 1rem;
+        color: #828282;
+        text-decoration: none;
+    }
+
+    .upper-block a:hover {
+        color:#000;
     }
 
     /*CTA-block*/

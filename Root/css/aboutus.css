@@ -13,8 +13,8 @@
 
 .left-column-feature,
 .right-column-feature {
-    flex: 2; 
-    flex-direction: column;  
+    flex: 2;
+    flex-direction: column;
 }
 
 .right-column-feature {
@@ -35,42 +35,42 @@
 }
 
 @media only screen and (max-width: 933px) {
-    .icon-images img{
+    .icon-images img {
         width: 82px;
         height: 82px;
     }
 }
 
 @media only screen and (max-width: 757px) {
-    .icon-images img{
+    .icon-images img {
         width: 72px;
         height: 72px;
     }
 }
 
 @media only screen and (max-width: 677px) {
-    .icon-images img{
+    .icon-images img {
         width: 62px;
         height: 62px;
     }
 }
 
 @media only screen and (max-width: 597px) {
-    .icon-images img{
+    .icon-images img {
         width: 52px;
         height: 52px;
     }
 }
 
 @media only screen and (max-width: 517px) {
-    .icon-images img{
+    .icon-images img {
         width: 42px;
         height: 42px;
     }
 }
 
 @media only screen and (max-width: 437px) {
-    .icon-images img{
+    .icon-images img {
         width: 38px;
         height: 38px;
     }
@@ -78,19 +78,19 @@
 
 @media only screen and (max-width: 850px) {
     .container-for-feature {
-		display: flex;
-		flex-direction: column;
-		gap: 0.1rem;
-	}
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+    }
 
-	.right-column-feature {
-		order: 1;
-	}
+    .right-column-feature {
+        order: 1;
+    }
 
-	.right-column-feature img {
-		width: 100%;
-		height: 25rem;
-	}
+    .right-column-feature img {
+        width: 100%;
+        height: 25rem;
+    }
 
     .left-column-feature-2 {
         margin-top: 25rem;

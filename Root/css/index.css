@@ -111,6 +111,7 @@ h2.title {
 }
 
 @media screen and (max-width: 550px) {
+
 	.container-for-mens-section,
 	.container-for-womens-section {
 		display: flex;

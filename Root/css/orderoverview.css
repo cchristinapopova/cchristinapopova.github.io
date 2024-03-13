@@ -1,10 +1,10 @@
 .payment-success-section {
     display: flex;
     flex-direction: column;
-    text-align: center;   
+    text-align: center;
 }
 
-.left-and-right-columns{
+.left-and-right-columns {
     display: flex;
     gap: 1rem;
 }
@@ -37,7 +37,7 @@
     gap: 1rem;
     height: 90%;
     justify-content: center;
-    }
+}
 
 .right-column {
     display: flex;
@@ -56,7 +56,7 @@
     margin-top: 1.5rem;
 }
 
-.basic-button { 
+.basic-button {
     box-sizing: border-box;
     padding: 1rem;
     width: 100%;
@@ -81,6 +81,7 @@
         display: flex;
         flex-direction: column;
     }
+
     .right-column {
         order: 1;
         align-self: center;
@@ -95,7 +96,7 @@
     .below-grid {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;            
+        flex-wrap: wrap;
     }
 }
 
@@ -103,10 +104,10 @@
     .below-grid {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;             
+        flex-wrap: wrap;
     }
-    
-    .basic-button { 
+
+    .basic-button {
         width: 100%;
         box-sizing: border-box;
         padding: 1rem 0;

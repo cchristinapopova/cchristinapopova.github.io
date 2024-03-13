@@ -34,7 +34,8 @@ section {
 
 .right-column {
 	flex: 2;
-	position: relative; /* Create a positioning context for the absolute positioning of the image */
+	position: relative;
+	/* Create a positioning context for the absolute positioning of the image */
 }
 
 .text-content {
@@ -54,7 +55,8 @@ section {
 	object-fit: cover;
 	flex-shrink: 0;
 	border-radius: 16px;
-	position: absolute; /* Position the image relative to its containing block */
+	position: absolute;
+	/* Position the image relative to its containing block */
 	object-position: left;
 }
 
@@ -145,7 +147,8 @@ section {
 
 .product-box h2,
 .product-box p {
-	margin: 0.1rem; /* Reset margin */
+	margin: 0.1rem;
+	/* Reset margin */
 }
 
 .pricetag-and-item-count {
@@ -171,6 +174,7 @@ section {
 	.bestseller-men {
 		margin-bottom: 6rem;
 	}
+
 	.image-section img {
 		min-height: 20rem;
 	}

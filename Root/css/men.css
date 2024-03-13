@@ -27,14 +27,14 @@ section {
 
 .left-column,
 .right-column {
-    flex: 3;
-    display: flex;
-    flex-direction: column;
+	flex: 3;
+	display: flex;
+	flex-direction: column;
 }
 
 .right-column {
-    flex: 2;
-    position: relative; /* Create a positioning context for the absolute positioning of the image */
+	flex: 2;
+	position: relative; /* Create a positioning context for the absolute positioning of the image */
 }
 
 .text-content {
@@ -60,7 +60,7 @@ section {
 
 .product-description {
 	text-align: left;
-	color: #828282;
+	color: #333;
 }
 
 .pricetag-and-item-count-for-bestseller {
@@ -93,9 +93,9 @@ section {
 	padding: 1rem 0.5rem;
 	border-radius: 40px;
 	justify-content: center;
-	width: fit-content; 
+	width: fit-content;
 	text-decoration: none;
-    color: #000;
+	color: #000;
 	text-align: center;
 }
 

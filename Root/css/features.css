@@ -1,162 +1,153 @@
-
 .small-grey-h1 {
-    color: #828282;
-    font-size: 0.7rem;
-    text-transform: uppercase;
+	font-size: 1rem;
+	text-transform: uppercase;
 }
 
 .container-for-all-feature-containers {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
 }
 
 .container-for-feature {
-    display: flex;
-    gap: 1.5rem;
+	display: flex;
+	gap: 1.5rem;
 }
 
 .left-column-feature,
 .right-column-feature {
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
 }
 
 .right-column-feature {
-    flex-grow: 1;
-    position: relative;
-    flex: 2;
+	flex-grow: 1;
+	position: relative;
+	flex: 2;
 }
 
-
 .right-column-feature img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    object-fit: cover;
-    border-radius: 16px;
-    object-position: center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	object-fit: cover;
+	border-radius: 16px;
+	object-position: center;
 }
 
 .image-section-1:nth-child(2) img {
-    object-position: bottom;
+	object-position: bottom;
 }
 
 .image-section-2:nth-child(1) img {
-    object-position: center;
+	object-position: center;
 }
 
-h3 {
-    color: #828282;
-}
-
-.bold-text { 
-    color: #000;
-    display: inline;
+.bold-text {
+	display: inline;
 }
 
 .learn-more-and-feature-boxes-section {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
 }
 
 .feature-boxes-section {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
 }
 
 .feature-box-grey,
 .feature-box-green,
 .feature-box-orange,
 .feature-box-lightgreen {
-    padding: 0.5rem 0.8rem;
-    border-radius: 8px;
-    font-size: 0.8rem;  
-    box-sizing: border-box;
-    width: fit-content;
+	padding: 0.5rem 0.8rem;
+	border-radius: 8px;
+	font-size: 0.8rem;
+	box-sizing: border-box;
+	width: fit-content;
 }
 
 .feature-box-grey {
-    background-color: #e8e8e8;
+	background-color: #e8e8e8;
 }
 
 .feature-box-orange {
-    background-color: rgba(228, 83, 26, 0.2);
-    color: #e4531a;
+	background-color: rgba(228, 83, 26, 0.2);
+	color: #b53b00;
 }
 
 .feature-box-green {
-    background-color: rgba(144, 186, 146, 0.3);
-    color: #344c2b;
+	background-color: rgba(144, 186, 146, 0.3);
+	color: #344c2b;
 }
 
 .feature-box-lightgreen {
-    background-color: rgba(118, 137, 126, 0.4);
-    color: #65766c;
+	background-color: rgba(118, 137, 126, 0.4);
+	color: #36413a;
 }
 
 @media screen and (min-width: 1000px) {
-    .left-column-feature {
-        flex: 3; 
-    }
+	.left-column-feature {
+		flex: 3;
+	}
 
-    .right-column-feature {
-        flex: 2;
-    }
+	.right-column-feature {
+		flex: 2;
+	}
 }
 
 @media screen and (min-width: 550px) {
-    .right-column-feature {
-    flex: 1;
-    }
+	.right-column-feature {
+		flex: 1;
+	}
 
-    .right-column-feature img {   
-        height: 100%;
-    }
+	.right-column-feature img {
+		height: 100%;
+	}
 }
 
 @media screen and (max-width: 550px) {
-    .container-for-feature,     
-    .image-section {
-        display: flex;
-        flex-direction: column; 
-        gap: 25rem;
-    }
+	.container-for-feature,
+	.image-section {
+		display: flex;
+		flex-direction: column;
+		gap: 25rem;
+	}
 
-    .left-column-feature {
-        order: 1;
-    }
+	.left-column-feature {
+		order: 1;
+	}
 
-    .right-column-feature img {
-        width: 100%;
-        height: 25rem;
-    }
+	.right-column-feature img {
+		width: 100%;
+		height: 25rem;
+	}
 
-    .logo-and-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+	.logo-and-title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
-    .logo-and-title img {
-        max-width: 45%;
-    }
+	.logo-and-title img {
+		max-width: 45%;
+	}
 
-    .learn-more-and-feature-boxes-section,
-    .feature-boxes-section {
-        align-items: center;
-        text-align: center;
-    }
+	.learn-more-and-feature-boxes-section,
+	.feature-boxes-section {
+		align-items: center;
+		text-align: center;
+	}
 
-    .feature-box-grey,
-    .feature-box-green,
-    .feature-box-orange,
-    .feature-box-lightgreen { 
-        width: 100%;
-    }
+	.feature-box-grey,
+	.feature-box-green,
+	.feature-box-orange,
+	.feature-box-lightgreen {
+		width: 100%;
+	}
 }
-

@@ -6,7 +6,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items:center;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     font-family: "Roboto Condensed", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -18,13 +18,13 @@ nav {
 nav a {
     margin-right: 1.25rem;
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.5);
+    color: #333;
     white-space: nowrap;
     border-radius: 20px;
 }
 
 nav a.current-page {
-    color: #333;
+    color: #000;
 }
 
 main {
@@ -92,16 +92,18 @@ h3 {
 }
 
 .view-cart-small {
-	font-size: 0.7rem;
+	font-size: 1rem;
     margin-top: 1.3rem;
+    text-align: center;
 }
 
 .view-cart-small a {
-	color: #828282;
+	color: #333;
 }
 
 .view-cart-small a:hover {
 	color: #000;
+    font-weight: bold;
 }
 
 /*Hamburger menu hidden*/
@@ -133,7 +135,7 @@ h3 {
 
     nav a {
         display: block;
-        color: rgba(0, 0, 0, 0.5);
+        color: #333;
         padding: 0.5rem;
         font-size: 1rem;
         margin-right: 0;
@@ -173,7 +175,8 @@ h3 {
     }
 
     nav a:hover {
-        color: black;
+        color: #000;
+        font-weight: bold;
     }
 
     .dropdown { 
@@ -196,7 +199,7 @@ h3 {
 
     .dropdown a {
         display: block;
-        color: rgba(0, 0, 0, 0.5);
+        color: #333;
         text-decoration: none;
     }
 
@@ -204,7 +207,7 @@ h3 {
         border-top: 1px solid transparent #ccc;
         display: block;
         padding: 0.3rem 0.5rem 0.7rem 0.5rem;
-        color: rgba(0, 0, 0, 0.5);
+        color: #333;
         text-decoration: none;
     }
 
@@ -223,17 +226,18 @@ h3 {
     .upper-block h1,
     .upper-block .back-arrow {
         font-size: 1rem;
-        color: #828282;
+        color: #333;
         text-decoration: none;
     }
 
     .upper-block a:hover {
         color:#000;
+        font-weight: bold;
     }
 
     /*CTA-block*/
     .cta-block {
-        background-color: rgb(255, 171, 91, 1);
+        background-color: #c45500;
         border-radius: 16px;
         display: flex;
         box-sizing: border-box;
@@ -337,7 +341,7 @@ h3 {
     footer section:nth-child(1) div:nth-child(3) img{
         width: 30px;
         height: auto;
-        margin: 0 px;
+        margin: 0px;
     }
 
     /*Separator line styles*/

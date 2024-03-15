@@ -79,7 +79,7 @@ section {
 
 .price-and-buttons {
 	display: flex;
-	flex-direction: column;
+	gap: 0.5rem;
 }
 
 .category-buttons-block {

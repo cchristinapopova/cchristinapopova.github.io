@@ -142,14 +142,6 @@ h3 {
         margin-right: 0;
     }
 
-    #cart-tag {
-        display: none;
-    }
-
-    nav a[href="women.html"] {
-        margin-bottom: -10px;
-    }
-
     .dropdown .dropdown-content {
         display: block;
         /* Display the dropdown content as a block */

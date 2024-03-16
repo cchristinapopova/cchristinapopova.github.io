@@ -86,6 +86,7 @@ h3 {
 .basic-button a {
     color: #fff;
     text-decoration: none;
+    align-self: center;
 }
 
 .basic-button:hover {

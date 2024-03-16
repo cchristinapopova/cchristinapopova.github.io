@@ -33,7 +33,7 @@
 
 .thank-you-img {
     width: 100%;
-    height: auto;
+    min-height: 5rem;
     border-radius: 16px;
 }
 

@@ -4,18 +4,18 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/Root/css/styles.css" />
-		<link rel="stylesheet" href="../css/reachouttous.css" />
+		<link rel="stylesheet" href="/css/styles.css" />
+		<link rel="stylesheet" href="../css/cart.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
 		<link rel="icon" type="image/x-icon" href="../images/favicon.png" />
-		<title>RainyDays|Reach Out to Us</title>
+		<title>RainyDays|Cart</title>
 		<meta name="description"
-			content="Connect with Rainy Days. Reach out to us for any inquiries, assistance, or feedback. Our team is here to help and provide the best customer support experience." />
-		<meta property="og:title" content="RainyDays|Reach Out to Us" />
-		<meta property="og:url" content="https://www.rainydays.com/reachouttous" />
+			content="Checkout our Rainy Days jacket collection in your cart. Finalize your stylish choices and get ready for any weather." />
+		<meta property="og:title" content="RainyDays|Cart" />
+		<meta property="og:url" content="https://www.rainydays.com/cart" />
 		<meta property="og:type" content="website" />
 		<meta property="og:image" content="/images/headerlogo.png" />
 	</head>
@@ -35,52 +35,56 @@
 				<a href="../html/men.html">Men</a>
 				<a href="../html/women.html">Women</a>
 				<div class="dropdown">
-					<a id="cart-tag" href="../html/cart.html">Cart</a>
+					<a id="cart-tag" href="../html/cart.html" class="current-page">Cart</a>
 					<div class="dropdown-content">
 						<a href="../html/billinginformation.html">Billing Information</a>
 						<a href="../html/orderoverview.html">Order Overview</a>
 					</div>
 				</div>
 				<a href="../html/aboutus.html">About Us</a>
-				<a href="../html/reachouttous.html" class="current-page">Reach Out to Us</a>
+				<a href="../html/reachouttous.html">Reach Out to Us</a>
 			</nav>
 		</header>
 		<main>
 			<div class="upper-block">
 				<div>
-					<a class="back-arrow" href="../index.html">
+					<a class="back-arrow" href="../html/men.html">
 						Back</a> </div>
 				<div>
 					<h1>0 Item(s)</h1>
 				</div>
 			</div>
 
-			<h1>Contact us</h1>
-			<section class="container">
-				<div class="left-column-container">
-					<img src="../images/reachoutimage.jpg"
-						alt="hiker in Rainy Days jacket by the mountain riverside in the rain" class="form-image" />
+			<h1>Cart</h1>
+
+			<section class="container-for-main">
+				<div class="no-items-in-cart-section">
+					<img src="../images/no-item-shopping-bag.png" alt="an empty shopping bag icon" />
+					<h3>No items in your cart</h3>
 				</div>
-				<div class="right-column-container">
-					<div class="container-for-logo">
-						<img src="../images/headerlogo.png" alt="header logo" class="headerlogo" />
+
+				<h1>Order Summary: Total Payment Amount</h1>
+
+				<div class="please-proceed-section">
+					<div class="thank-you-text-block">
+						<p>
+							Thank you for trusting our jackets. To finalize your purchase,
+							please proceed to checkout.
+						</p>
 					</div>
-					<form action="thankyou.html" method="get">
-						<h2>Get in Touch</h2>
-						<fieldset>
-							<legend><label for="name">Name</label></legend>
-							<input type="text" name="name" id="name" class="form__input" />
-						</fieldset>
-						<fieldset>
-							<legend><label for="email">E-mail</label></legend>
-							<input type="email" name="email" id="email" class="form__input" required />
-						</fieldset>
-						<fieldset>
-							<legend><label for="yourmessage">Your Message</label></legend>
-							<textarea name="Your Message" id="yourmessage" class="form__textarea" required></textarea>
-						</fieldset>
-						<input type="submit" value="Submit" class="basic-button" />
-					</form>
+
+					<div class="thank-you-icons-block">
+						<h2>$ 0</h2>
+						<img src="../images/shopping-cart-for-complete-order-icon.png" alt="a shopping cart icon" />
+						<div class="basic-button">
+							<a href="billinginformation.html">Complete Order</a>
+						</div>
+					</div>
+				</div>
+				<div class="img-container">
+					<img src="../images/proceed-to-payment.jpg"
+						alt="sun breaking through clouds over river with mountains in the background"
+						class="thank-you-img" />
 				</div>
 			</section>
 		</main>

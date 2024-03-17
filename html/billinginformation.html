@@ -4,18 +4,18 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/Root/css/styles.css" />
-		<link rel="stylesheet" href="../css/cart.css" />
+		<link rel="stylesheet" href="/css/styles.css" />
+		<link rel="stylesheet" href="../css/billinginformation.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
 		<link rel="icon" type="image/x-icon" href="../images/favicon.png" />
-		<title>RainyDays|Cart</title>
+		<title>RainyDays|Billing Information</title>
 		<meta name="description"
-			content="Checkout our Rainy Days jacket collection in your cart. Finalize your stylish choices and get ready for any weather." />
-		<meta property="og:title" content="RainyDays|Cart" />
-		<meta property="og:url" content="https://www.rainydays.com/cart" />
+			content="Provide your billing information securely to complete your purchase. Finish the process smoothly and enjoy your Rainy Days jacket with ease." />
+		<meta property="og:title" content="RainyDays|Billing Information" />
+		<meta property="og:url" content="https://www.rainydays.com/billinginformation" />
 		<meta property="og:type" content="website" />
 		<meta property="og:image" content="/images/headerlogo.png" />
 	</head>
@@ -35,9 +35,9 @@
 				<a href="../html/men.html">Men</a>
 				<a href="../html/women.html">Women</a>
 				<div class="dropdown">
-					<a id="cart-tag" href="../html/cart.html" class="current-page">Cart</a>
+					<a id="cart-tag" href="../html/cart.html">Cart</a>
 					<div class="dropdown-content">
-						<a href="../html/billinginformation.html">Billing Information</a>
+						<a href="../html/billinginformation.html" class="current-page">Billing Information</a>
 						<a href="../html/orderoverview.html">Order Overview</a>
 					</div>
 				</div>
@@ -48,43 +48,77 @@
 		<main>
 			<div class="upper-block">
 				<div>
-					<a class="back-arrow" href="../html/men.html">
+					<a class="back-arrow" href="../html/cart.html">
 						Back</a> </div>
 				<div>
 					<h1>0 Item(s)</h1>
 				</div>
 			</div>
 
-			<h1>Cart</h1>
-
+			<h1>Billing Information</h1>
 			<section class="container-for-main">
-				<div class="no-items-in-cart-section">
-					<img src="../images/no-item-shopping-bag.png" alt="an empty shopping bag icon" />
-					<h3>No items in your cart</h3>
-				</div>
+				<div class="right-column">
+					<h2 class="left-aligned-h2">
+						Choose Your Card and Enter Your Payment Details
+					</h2>
 
-				<h1>Order Summary: Total Payment Amount</h1>
-
-				<div class="please-proceed-section">
-					<div class="thank-you-text-block">
-						<p>
-							Thank you for trusting our jackets. To finalize your purchase,
-							please proceed to checkout.
-						</p>
+					<div class="cards-section">
+						<img src="../images/card1mastercard.png" alt="mastercard icon" />
+						<img src="../images/card2maestro.png" alt="maestro card icon" />
+						<img src="../images/card3american-express.png" alt="american express card icon" />
+						<img src="../images/card4dinersclub.png" alt="diners club card icon" />
+						<img src="../images/card5visa.png" alt="visa card icon" />
+						<img src="../images/card6discover.png" alt="discover card icon" />
 					</div>
 
-					<div class="thank-you-icons-block">
-						<h2>$ 0</h2>
-						<img src="../images/shopping-cart-for-complete-order-icon.png" alt="a shopping cart icon" />
-						<div class="basic-button">
-							<a href="billinginformation.html">Complete Order</a>
+					<form>
+						<div>
+							<label for="creditcard">Card Number</label>
+
+							<input type="text" id="creditcard" name="creditcard" placeholder="1234 9284 3872 8357"
+								maxlength="16" />
 						</div>
+
+						<div>
+							<label for="expirationdate">Valid Upto</label>
+
+							<input type="text" id="expirationdate" name="expirationdate" placeholder="MM/YY"
+								maxlength="5" />
+						</div>
+
+						<div>
+							<label for="cvv">CVV</label>
+
+							<input type="password" id="cvv" name="CVV" placeholder="123" maxlength="3" />
+						</div>
+
+						<div>
+							<label for="cardholdername">Cardholder Name</label>
+
+							<input type="text" id="cardholdername" name="cardholdername" />
+						</div>
+					</form>
+
+					<div class="total-amount-block">
+						<p>Total amount</p>
+						<p>$ 0</p>
+					</div>
+
+					<div class="checkbox-container">
+						<input type="checkbox" id="remembercard" name="add-card" />
+						<label for="remembercard">Add card for future payments</label>
+					</div>
+
+					<div class="basic-button">
+						<a href="orderoverview.html">Proceed Payment</a>
 					</div>
 				</div>
-				<div class="img-container">
-					<img src="../images/proceed-to-payment.jpg"
-						alt="sun breaking through clouds over river with mountains in the background"
-						class="thank-you-img" />
+
+				<div class="left-column">
+					<div>
+						<img src="../images/billing-information-big-img.jpg"
+							alt="hiker in Rainy Days jacket in the rain" />
+					</div>
 				</div>
 			</section>
 		</main>
